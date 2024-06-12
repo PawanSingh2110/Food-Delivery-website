@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+.app{
+  width: 75%;
+  margin: auto;
+  
+}
+
+.dot{
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 5px;
+  background-color: orangered;
+  top: -8px;
+  right: -8px;
+}
+.list{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.list-item{
+  margin: 0px 10px;
+
+}
+.list-item .active{
+  border: 4px solid brown;
+  border-radius: 50%;
+  
+
+}
+.foodlist{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+}
+
+.food-display{
+  animation: fade 3s;
+}
+.explore-menu{
+  animation: fade 3s;
+}
+
+.login-pop{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(165, 42, 42, 0.573);
+  display: grid;
+}
+.login-cont{
+  place-self: center;
+  color: #808080;
+  background-color: whitesmoke;
+  width:max(23vw,330px);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  animation: fade 3s;
+}
+.login-input{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-input input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  outline: none;
+
+}
+.cart{
+  margin-top: 50px;
+  
+}
+
+.cart-item-title{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr ;
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
